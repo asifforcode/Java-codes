@@ -27,6 +27,6 @@ public class prime_using_function {
         System.out.println();
     }
     public static void main(String[] args) {
-primerange(20);
+primerange(20);  // here we give the range 2-20 , you can give any range just chnage the value of 20 here with your needed range
     }
 }
