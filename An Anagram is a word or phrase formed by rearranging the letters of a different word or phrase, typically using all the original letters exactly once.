@@ -1,0 +1,54 @@
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class github {
+//Determine if 2 Strings are anagrams of each other
+    public static boolean angrams(String s, String t){
+        // convert lowercase to so we have to not check for seprately for upper & lowercase
+        s=s.toLowerCase();
+        t=t.toLowerCase();
+
+        // checking both string length
+        if(s.length()==t.length()){
+            // converting string into array for sorting
+            char[] Str1charArray=s.toCharArray();
+            char[] Str2charArray=t.toCharArray();
+            // sorting
+            Arrays.sort(Str1charArray);
+            Arrays.sort(Str2charArray);
+            // if both string length same then
+            boolean result=Arrays.equals(Str1charArray,Str2charArray);
+            if(result){
+                return true;
+            }
+        }
+return false;
+
+    }
+
+
+
+
+    public static void main(String[] args) {
+        String s;
+        String t;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter first string : ");
+        s= sc.nextLine();
+        System.out.println("Enter second string : ");
+        t=sc.nextLine();
+        System.out.println(angrams(s,t));
+
+
+
+
+
+    }
+
+    }
+
+
+
+
