@@ -5,7 +5,7 @@ public class github {
 
         //Write a program to print the multiplication table of a number N, entered by the user
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the number: ");
+        System.out.println("Enter the number : ");
         int num=sc.nextInt();
 
         for(int i=1;i<=10;i++){
