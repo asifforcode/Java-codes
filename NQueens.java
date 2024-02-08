@@ -26,7 +26,7 @@ public class NQueens {
 
     public static void nQueens(char board[][],int row) {
         //column loop
-        // base case
+        // base case of recursion
         if (row == board.length) {
             ways++;
 //            display(board);
