@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class EvenNumber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Size of the array: ");
+        int size = scanner.nextInt();
+        int[] numbers = new int[size];
+
+        for (int i = 0; i < size; i++) {
+            System.out.print("Element " + (i + 1) + ": ");
+            numbers[i] = scanner.nextInt();
+        }
+
+        int count = 0;
+        for (int num : numbers) {
+            if (num % 2 == 0) {
+                count++;
+            }
+        }
+
+        if (count > 0) {
+            int[] evenNumbers = new int[count];
+            int index = 0;
+            for (int num : numbers) {
+                if (num % 2 == 0) {
+                    evenNumbers[index++] = num;
+                }
+            }
+            System.out.print("Even numbers: ");
+            for (int num : evenNumbers) {
+                System.out.print(num + " ");
+            }
+        } else {
+            System.out.println("No even numbers");
+        }
+    }
+}
